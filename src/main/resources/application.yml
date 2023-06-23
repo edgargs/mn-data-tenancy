@@ -1,0 +1,34 @@
+micronaut:
+  application:
+    name: demoDataTenancy
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+micronaut:
+  data:
+    multi-tenancy:
+      mode: DATASOURCE
+  multitenancy:
+    tenantresolver:
+      httpheader:
+        enabled: true
+
+datasources:
+  foo:
+    url: jdbc:mysql://localhost:3306/foo
+    username: shopify
+    password: shopify
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    db-type: mysql
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
+  bar:
+    url: jdbc:mysql://localhost:3306/bar
+    username: shopify
+    password: shopify
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    db-type: mysql
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
