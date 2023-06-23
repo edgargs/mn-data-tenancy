@@ -18,6 +18,8 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
 
+    implementation("io.micronaut:micronaut-management")
+
     implementation("io.micronaut.multitenancy:micronaut-multitenancy")
 
     annotationProcessor("io.micronaut.data:micronaut-data-processor")
