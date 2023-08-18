@@ -1,12 +1,6 @@
 micronaut:
   application:
     name: demoDataTenancy
-netty:
-  default:
-    allocator:
-      max-order: 3
-
-micronaut:
   data:
     multi-tenancy:
       mode: DATASOURCE
