@@ -13,15 +13,14 @@ repositories {
 }
 
 dependencies {
-    //annotationProcessor("io.micronaut:micronaut-http-validation")
-    //implementation("io.micronaut:micronaut-http-client")
+
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     runtimeOnly("ch.qos.logback:logback-classic")
 
     implementation("io.micronaut:micronaut-management")
 
-    implementation("io.micronaut.multitenancy:micronaut-multitenancy")
+    //implementation("io.micronaut.multitenancy:micronaut-multitenancy")
 
     annotationProcessor("io.micronaut.data:micronaut-data-processor")
     implementation("io.micronaut.data:micronaut-data-jdbc")

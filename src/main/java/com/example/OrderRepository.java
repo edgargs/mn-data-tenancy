@@ -7,7 +7,7 @@ import io.micronaut.data.repository.CrudRepository;
 import java.util.List;
 
 @JdbcRepository(dialect = Dialect.MYSQL)
-public interface OrdersRepository extends CrudRepository<Order, Integer> {
+public interface OrderRepository extends CrudRepository<Order, Integer> {
 
     @Override
     List<Order> findAll();
